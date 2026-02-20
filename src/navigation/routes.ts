@@ -1,12 +1,8 @@
-// src/navigation/types.ts
-
 export type AuthStackParamList = {
   Splash: undefined;
   SignIn: undefined;
   SignUp: undefined;
-  OnboardingStep1: undefined;
-  OnboardingStep2: undefined;
-  OnboardingStep3: undefined;
+  Onboarding: undefined;
 };
 
 export type MainTabParamList = {
@@ -20,8 +16,8 @@ export type MainTabParamList = {
 export type RootStackParamList = {
   Auth: undefined;
   Main: undefined;
+  Onboarding: undefined; // add this
 
-  // Secondary stack screens (presented above tabs)
   EventDetail: { eventId: string };
   AnnouncementDetail: { announcementId: string };
   ResourceDetail: { resourceId: string };
